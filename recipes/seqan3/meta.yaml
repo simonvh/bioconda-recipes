@@ -14,18 +14,18 @@ build:
 
 requirements:
   build:
-    - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - cmake
 
 test:
   commands:
-    - test -e ${PREFIX}/include/seqan/align.h
-    - test -e ${PREFIX}/share/cmake/seqan/seqan-config.cmake
-    - test -e ${PREFIX}/share/pkgconfig/seqan-2.pc
+    - test -e ${PREFIX}/include/seqan3/version.hpp
+    - test -e ${PREFIX}/include/seqan3/core/platform.hpp
+    - test -e ${PREFIX}/share/cmake/seqan3/seqan3-config.cmake
 
 about:
-  home: http://docs.seqan.de/seqan/3-master-user/
+  home: https://www.seqan.de
+  development: https://github.com/seqan/seqan3
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.md
