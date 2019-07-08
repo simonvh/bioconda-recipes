@@ -1,10 +1,10 @@
 #!/bin/bash
 
-mkdir -p $PREFIX/include
-mkdir -p $PREFIX/share/cmake
-mkdir -p $PREFIX/share/doc
-mkdir -p $PREFIX/share/pkgconfig
-mv include/seqan $PREFIX/include
-mv share/cmake/seqan $PREFIX/share/cmake
-mv share/doc/seqan $PREFIX/share/doc
-mv share/pkgconfig/* $PREFIX/share/pkgconfig
+install -d $PREFIX/include
+install -d $PREFIX/share/cmake
+install -d $PREFIX/share/doc
+install -d  $PREFIX/share/pkgconfig
+install include/seqan $PREFIX/include
+install share/cmake/seqan $PREFIX/share/cmake
+install share/doc/seqan $PREFIX/share/doc
+install share/pkgconfig/* $PREFIX/share/pkgconfig

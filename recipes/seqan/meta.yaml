@@ -1,17 +1,22 @@
-{% set name = "SeqAn" %}
-{% set version = "2.4.0" %}
-{% set sha256 = "870dee2d758853a322dd561eb584fe66ddf6981e126c303c7c81c95e5495f153" %}
+{% set name = "SeqAn3" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: http://packages.seqan.de/seqan-library/seqan-library-{{ version }}.zip
-  sha256: {{ sha256 }}
+  url: https://github.com/seqan/{{ name|lower }}/releases/download/{{ version }}/seqan-3.0.0-with-submodules.tar.gz
+  sha256: ba8f0fd5d19289f95823235b69fdc5a12aba3578292463eecf750722e8662bd3
 
 build:
   number: 0
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - cmake
 
 test:
   commands:
@@ -20,6 +25,8 @@ test:
     - test -e ${PREFIX}/share/pkgconfig/seqan-2.pc
 
 about:
-  home: http://www.seqan.de/
+  home: http://docs.seqan.de/seqan/3-master-user/
   license: BSD-3-Clause
-  summary: 'SeqAn is an open source C++ library of efficient algorithms and data structures for the analysis of sequences with the focus on biological data.'
+  license_family: BSD
+  license_file: LICENSE.md
+  summary: 'SeqAn3 is the new version of the popular SeqAn template library for the analysis of biological sequences.'
