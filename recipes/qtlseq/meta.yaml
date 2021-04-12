@@ -1,6 +1,6 @@
 {% set name = "qtlseq" %}
-{% set version = "2.1.0" %}
-{% set sha256 = "72b924bcc8c6eba6d0ed6ad5f78973e77036f7c242dd98eaab2e7af3e3a66afb" %}
+{% set version = "2.2.0" %}
+{% set sha256 = "f8c914961fefb59e66ac406d40b4fc8a0eeb91647d815aa01e3b8d16453ca578" %}
 
 package:
   name: {{ name|lower }}
@@ -28,7 +28,7 @@ requirements:
     - tabix
     - snpeff
     - trimmomatic
-    - matplotlib
+    - matplotlib-base
     - numpy
     - pandas
     - seaborn

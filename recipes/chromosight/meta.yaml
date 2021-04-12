@@ -1,5 +1,5 @@
 {% set name = "chromosight" %}
-{% set version = "0.9.7" %}
+{% set version = "1.5.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e694b23d9774ce66591d8e149c374f535514a6b04e803aa205c218d9922fed24
+  sha256: dee00d4a097862585e139309b592a18c21bf814da245d4d91ca1798de0591375
 
 build:
   number: 0

@@ -1,6 +1,6 @@
 package:
   name: bcbio-nextgen
-  version: '1.2.1'
+  version: '1.2.7'
 
 build:
   number: 0
@@ -12,8 +12,8 @@ build:
 
 source:
   #url: https://pypi.io/packages/source/b/bcbio-nextgen/bcbio-nextgen-1.1.5.tar.gz
-  url: https://github.com/bcbio/bcbio-nextgen/archive/v1.2.1.tar.gz
-  sha256: 72c8a96621aed3203dc7b219cf088e46278b179bd1485d035acc0a35794a1c9a
+  url: https://github.com/bcbio/bcbio-nextgen/archive/v1.2.7.tar.gz
+  sha256: a13c9b03845283d359e9eb6c2d46e9de5bbf8ea77b95fc798f5415c614f5face
 
 requirements:
   host:
